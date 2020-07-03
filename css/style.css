@@ -1,0 +1,13 @@
+td[contenteditable] {
+    background-color: #f5f5f5;
+}
+
+
+td[contenteditable]:focus {
+    outline: none;
+    background-color: #eee;
+}
+
+.precio-producto::before {
+    content: '$ ';
+}

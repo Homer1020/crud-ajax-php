@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tienda de Homer</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header py-3 bg-primary">
+        <div class="container">
+            <h1 class="h2 font-weight-normal text-white mb-0">La Tienda de Homer</h1>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <form id="form-productos" class="card card-body shadow">
+                    <h2 class="h4">Añadir Producto</h2>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Nombre del Producto" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="precio">Precio</label>
+                        <input type="number" id="precio" placeholder="Precio en Dolares" class="form-control">
+                    </div>
+                    <input type="submit" value="Añadir Producto" class="btn btn-success">
+                </form>
+            </div>
+            <div class="col-md-7">
+                <table class="table table-bordered shadow">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Eliminar</th>
+                            <th>Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productos">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
